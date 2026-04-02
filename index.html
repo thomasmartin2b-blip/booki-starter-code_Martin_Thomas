@@ -30,8 +30,10 @@
 
             <div class="Barre de recherche">
                 <i class="fa-solid fa-location-dot" style="color: rgb(0, 0, 0);"></i>
-                <strong>Marseille, France</strong>
-                <button>Rechercher</button>
+                <form action="/recherche" method="get">
+                <input type="text" name="Localisation" placeholder="Marseille, France" />
+                <button type="submit">Rechercher</button>
+</form>
             </div>
 
             <section class="Filtres">
