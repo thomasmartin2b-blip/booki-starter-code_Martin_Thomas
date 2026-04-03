@@ -18,27 +18,30 @@
     <div class="main-container">
         <header>
             <nav>
-                <img src="images/logo/Booki.png" alt="logo">
-                <ul>
-                    <li><a href="">Hébergements</a></li>
-                    <li><a href="">Activités</a></li>
-                </ul>
+                <a href="index.html" class="navlogo">
+                    <img src="images/logo/Booki.png" alt="logo"></a> 
+                <div class="navlink">           
+                    <a href="">Hébergements</a>
+                    <a href="">Activités</a>
+                </div>
             </nav>
 
-            <h1>Trouvez votre hébergement vers des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
+            <div class="title">
+                <h1>Trouvez votre hébergement vers des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
 
-            <div class="Barre de recherche">
-                <i class="fa-solid fa-location-dot" style="color: rgb(0, 0, 0);"></i>
+            <div class="barrederecherche">
                 <form action="/recherche" method="get">
+                <i class="fa-solid fa-location-dot" style="color: rgb(0, 0, 0);"></i>
                 <input type="text" name="Localisation" placeholder="Marseille, France" />
                 <button type="submit">Rechercher</button>
-</form>
+                </form>
             </div>
 
             <section class="Filtres">
                 <h2>Filtres</h2>
-                    <div class="Boutons filtres">
+                    <div class="Boutonsfiltres">
                         <ul>
                             <li><a href=""><i class="fa-solid fa-money-bill-wave" style="color: rgb(16, 73, 221);"></i><strong>Économique</strong></a></li>
                             <li><a href=""><i class="fa-solid fa-person" style="color: rgb(16, 73, 221);"></i><strong>Familial</strong></a></li>
