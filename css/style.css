@@ -166,6 +166,13 @@ nav {
     gap: 68px;
 }
 
+.menu a {
+    display: inline-block;
+    height: 40px;
+    vertical-align: bottom;
+    line-height: 40px;
+}
+
 .menu :hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -173,12 +180,11 @@ nav {
 
 h1 {
     font-size: 22px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
-.p {
+p {
     margin-top: 8px;
-    margin-bottom: 50px;
 }
 
 .barrederecherche {
@@ -188,7 +194,7 @@ h1 {
     padding: 0px;
     gap: 24px;
     background: #FFFFFF;
-    border: 1px solid #F2F2F2;
+    border: 1px solid white;
     border-radius: 15px;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -262,6 +268,10 @@ h1 {
     padding: 14px 16px;
 }
 
+.boutonsfiltres li :hover {
+    background-color: #DEEBFF;
+}
+
 
 .inform {
   display: flex;
@@ -279,6 +289,12 @@ h1 {
 
 .inform p {
   margin: 0;          
+}
+
+.mainheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -396,4 +412,4 @@ h1 {
         margin: 20px 20px;
     }
 
-}
+} 
