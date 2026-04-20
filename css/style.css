@@ -112,19 +112,25 @@ nav {
 }
 
 .barrederecherche {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.barrederecherche form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 24px;
     background: #FFFFFF;
-    border: 1px solid white;
+    width: 40%;
+    border: solid 1px #F2F2F2;
     border-radius: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    height: 49px;
 }
 
-.barrederecherche i {
+.geologo {
+    font-size: 18px;
+    height: 50px;
+    width: 17%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,8 +138,6 @@ nav {
     border: 1px solid #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    height: 50px;
-    width: 49px;
 }
 
 .barrederecherche input[type="text"] {
@@ -141,17 +145,21 @@ nav {
     border: none;
     color: black;
     text-align: center;
+    
 }
 
 .barrederecherche input[type="text"]::placeholder {
     color: black;
     font-weight: bold;
-    text-align: center;
+}
+
+.barrederecherche input:focus {
+    outline: none;
 }
 
 #search-butt-txt {
-    height: 53px;
-    width: 133px;
+    height: 50px;
+    width: 40%;
     background-color: #0065FC;
     border: 1px solid #0065FC;
     border-top-right-radius: 15px;
@@ -165,9 +173,6 @@ nav {
     display: none;
 }
 
-.barrederecherche form {
-    display: flex;
-}
 
 .filtres {
     display: flex;
@@ -180,25 +185,27 @@ nav {
 }
 
 .boutonsfiltres ul {
-    font-size: 17px;
-    gap: 15px;
-    list-style: none;
     display: flex;
-    padding:  4px 19px;
+    list-style: none;
+    font-size: 17px;
+    padding: 0;
 }
 
-.boutonsfiltres li a {
+.boutonsfiltres li {
+    padding-left: 15px;
+}
+
+.boutonsfiltres a {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     gap: 10px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 14px 16px;
+    padding: 15px;
 }
 
 .boutonsfiltres i {
-    display: flex;
-    align-items: center;
+    font-size: 20px;
 }
 
 .boutonsfiltres li :hover {
@@ -525,8 +532,17 @@ footer {
 
 @media (max-width: 767.98px) {
 
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
     .main-container {
         padding: 0;
+    }
+
+     .mainheader {
+        padding: 0px 25px
     }
 
     nav {
@@ -535,13 +551,14 @@ footer {
     }
 
     .navlogo {
-        height: 30px;
+        height: 22px;
         justify-content: center;
+        padding-bottom: 25px;
     }
 
     .menu {
         width: 100%;
-        font-size: 22px;
+        font-size: 16px;
         gap: 0;
         border-bottom: 2px solid #F2F2F2;
     }
@@ -549,7 +566,7 @@ footer {
     .navlink {
         width: 50%;
         text-align: center;
-        padding: 15px;
+        padding: 5px;
     }
 
     .menu :hover {
@@ -559,21 +576,144 @@ footer {
     }
 
     .title h1 {
-        font-size: 30px;
+        font-size: 23px;
     }
 
     .title p {
-        font-size: 20px;
+        padding-top: 3px;
+        font-size: 17px;
     }
 
-    .mainheader {
-        padding: 20px
+    .barrederecherche form {
+        width: 100%;
     }
 
-    .barrederecherche {
-        padding-top: 25px;
+    .barrederecherche input[type="text"] {
+        width: 85%;
+        text-align: start;
+        padding-left: 20px;
     }
     
+    #search-butt-txt {
+        display: none;
+        
+    }
+
+     #search-butt-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 17%;
+        font-size: 18px;
+        border: solid 1px #0065FC;
+        border-radius: 15px;
+        background-color: #0065FC;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+
+    #search-butt-icon .fa-solid {
+        color: white;
+    }
+
+    .filtres h2 {
+        margin-bottom: 20px;
+    }
+
+    .boutonsfiltres ul {
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .boutonsfiltres li {
+        padding: 0;
+        width: 48%;
+        padding-bottom: 20px;
+    }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        padding: 15px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background: none;
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        margin-top: 20px;
+    }
+
+    .hebergements-cards {
+        flex-direction: column;
+    }
+
+    .hebergements h2 {
+        margin-bottom:15px;
+        
+    }
+
+    .hebergements-cards .card {
+        width: 95%;
+        margin-top: 15px;
+    }
+    
+    section.hebergements {
+        background-color: white;
+    }
+
+    section.populaires {
+        margin-top: 10px;
+        padding:  35px 25px;
+    }
+
+    .activities {
+        padding: 15px;
+    }
+
+    .activities-cards {
+        flex-direction: column;
+    }
+
+    .activities-cards .card {
+        width: 100%;
+    }
+
+    .activities-cards img {
+        height: 150px;
+    }
+
+    .activities .card-content {
+        padding: 5px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        margin-bottom: 0;
+    }
+
+    
+   
+ 
 
 
 } 
