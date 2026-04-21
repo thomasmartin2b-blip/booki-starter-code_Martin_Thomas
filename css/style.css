@@ -57,6 +57,9 @@ a {
     color: var(--main-bg-color)
 }
 
+body {
+    margin-top: 0;
+}
 
 
 /****** Header ***********/
@@ -73,20 +76,17 @@ nav {
 .navlogo {
     display: flex;
     height: 19px;
-    padding: 30px 0px;
+    padding: 40px 0px 30px 0px;
 }
 
 .menu {
     display: flex;
-    justify-content: flex-end;
     gap: 68px;
 }
 
 .menu a {
-    display: inline-block;
-    height: 40px;
-    vertical-align: bottom;
-    line-height: 40px;
+    padding-top: 15px;
+    
 }
 
 .menu :hover {
@@ -120,6 +120,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    min-width: 378px;
     background: #FFFFFF;
     width: 28%;
     border: solid 1px #F2F2F2;
@@ -478,11 +479,7 @@ footer {
     nav {
         margin-bottom: 40px;
     }
-
-    .barrederecherche form {
-        width: 41%;
-    }
-
+    
     .filtres {
        flex-direction: column;
        align-items: start;
@@ -598,10 +595,10 @@ footer {
         border-bottom: 2px solid #F2F2F2;
     }
 
-    .navlink {
+    .menu a {
         width: 50%;
         text-align: center;
-        padding: 5px;
+        padding: 5px 0px 15px 0px;
     }
 
     .menu :hover {
@@ -621,6 +618,7 @@ footer {
 
     .barrederecherche form {
         width: 100%;
+        min-width: 0;
     }
 
     .barrederecherche input[type="text"] {
